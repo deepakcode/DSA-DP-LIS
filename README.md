@@ -154,6 +154,18 @@ int longestStringChain(String[] arr){
 
 #### Longest Bitonic Subsequence
 
+dp1[]   = 1 , 2 , 2 , 3 , 3 , 4 , 2 , 1
+
+dp2[]   = 1,  5 , 2 , 4 , 3 , 3 , 2 , 1 
+
+bitonic | 1 | 6 | 3 | 6 | 5 | 6 | 3 | 1
+
+bitonic len = 6 
+
+<img width="448" alt="Screenshot 2022-08-15 at 4 04 28 AM" src="https://user-images.githubusercontent.com/13814143/184557319-2fd8917e-ef6b-4afc-84d7-b11da2dc686a.png">
+
+
+
     LIS - > left to right - dp1[i]
     LIS -> Right to left - dp2[i]
 
