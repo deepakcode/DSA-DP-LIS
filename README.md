@@ -34,11 +34,15 @@ class Solution
 #### There is another efficient approach is avaiable in less space time complexity, but we can't print LIS from this method, but we can count it.
 
 Intution : 
-Binary Search 
+The idea is to maintain the track of smallest and largest value while traversing input array and keep track of smallest and largest element. if you find any element in between then just update its position in temp array (dp[]) with the help of binary search, because this element is smaller then the largest value it will not increase LIS length but it may update the last element value, which help use to calculate LIS length.
 
+Binary Search (nlogn)
 
 Coding Approach - 
-i index means - counter is i and i index will store last element of increasing subsequence.
+i index means - LIS lenght counter is 'i' and 'i' th index will store last element of increasing subsequence!
+
+<img width="983" alt="Screenshot 2022-08-15 at 2 15 33 AM" src="https://user-images.githubusercontent.com/13814143/184554644-44fe72ac-aec6-4ad1-9230-168a4d0f4a95.png">
+
 
 ```java
 
