@@ -152,3 +152,22 @@ int longestStringChain(String[] arr){
 
 
 
+#### Longest Bitonic Subsequence
+
+    LIS - > left to right - dp1[i]
+    LIS -> Right to left - dp2[i]
+
+    then 
+```java
+
+int maxi =0;
+
+for(int i=0; i<n; i++){
+    maxi = Math.max(maxi, dp1[i]+dp2[i]-1);
+}
+
+return maxi;
+```
+
+
+
