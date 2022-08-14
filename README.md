@@ -180,6 +180,13 @@ for(int i=0; i<n; i++){
 
 return maxi;
 ```
+#### Count number of LIS
 
+https://www.youtube.com/watch?v=cKVl1TFdNXg&list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&index=48
 
+dp1[]   = 1 , 2 , 2 , 3 , 3 , 4 , 2 , 1
+
+count   | 1 | 1 | 2 | 1 | 2 | 1 | 3 | 2
+
+take one more extra array and maintain the count of each LIS
 
