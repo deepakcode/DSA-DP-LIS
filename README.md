@@ -105,5 +105,15 @@ LIS based questions
 
     (arr[idx] % arr[preIdx) ==0
 
+#### Longest String chain (LIS)
+
+<img width="674" alt="Screenshot 2022-08-15 at 3 20 35 AM" src="https://user-images.githubusercontent.com/13814143/184556445-f2ce5204-1939-419e-9361-cac50f4ee42f.png">
+
+
+<img width="520" alt="Screenshot 2022-08-15 at 3 21 09 AM" src="https://user-images.githubusercontent.com/13814143/184556441-95f87f9a-53c2-478c-8c2d-becb2a27267b.png">
+
+
+<img width="721" alt="Screenshot 2022-08-15 at 3 20 54 AM" src="https://user-images.githubusercontent.com/13814143/184556438-5b7abd44-5ac1-486d-a77b-6eb924f6464c.png">
+
 
 
