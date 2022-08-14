@@ -93,5 +93,17 @@ i index means - LIS lenght counter is 'i' and 'i' th index will store last eleme
     }
     
 ```
+LIS based questions 
+
+#### Largest Divisible Subset (LIS)
+
+    the only change is  -
+
+    arr[idx] > arr[preIdx
+
+    to 
+
+    (arr[idx] % arr[preIdx) ==0
+
 
 
