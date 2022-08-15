@@ -107,6 +107,9 @@ LIS based questions
 
 #### Largest Divisible Subset (LIS)
 
+https://www.codingninjas.com/codestudio/problems/divisible-set_3754960
+
+
     the only change is  -
 
     arr[idx] > arr[preIdx
