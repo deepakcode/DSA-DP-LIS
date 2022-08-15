@@ -90,7 +90,8 @@ i index means - LIS lenght counter is 'i' and 'i' th index will store last eleme
             else
                 // A[i] wants to be current end candidate of an existing
                 // subsequence. It will replace ceil value in dp
-                dp[CeilIndex(dp, -1, len - 1, A[i])] = A[i];
+                int ceilIdx = CeilIndex(dp, -1, len - 1, A[i]);
+                dp[ceilIdx] = A[i];
         }
 
         return len;
