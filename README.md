@@ -49,54 +49,59 @@ i index means - LIS lenght counter is 'i' and 'i' th index will store last eleme
 
 
 ```java
+class Solution 
+{
 
-// Binary search (note boundaries in the caller)
-    // A[] is ceilIndex in the caller
-    static int CeilIndex(int A[], int l, int r, int key)
+    //Function to find length of longest increasing subsequence.
+    static int longestSubsequence(int size, int a[])
     {
-        while (r - l > 1) {
-            int m = l + (r - l) / 2;
-            if (A[m] >= key)
-                r = m;
-            else
-                l = m;
-        }
-
-        return r;
-    }
-
-    static int LongestIncreasingSubsequenceLength(int A[], int size)
-    {
-        // Add boundary case, when array size is one
-
+      
         int[] dp = new int[size];
 
-        int len =1; // always points empty slot
-                                                        // int A[] = { 2, 5, 3, 7, 11, 8, 10, 13, 6 };
-        dp[0] = A[0];// 0=2
+        dp[0] = a[0]; // we need to keep smallest value at '0' index, assuming first value is smallest value here.
 
-        for (int i = 1; i < size; i++) {
+        int len = 1; // Initialize len = 1; LIS is one.
+        
+        for(int i = 1; i<size; i++){
+            
+            if(a[i] < dp[0]){ // if the value is smaller then keep it at '0' index
 
-            // 0,0,2,3,
+                dp[0] = a[i];
+                
+            }else if ( a[i] > dp[len - 1]){ // if the value is greater then LIS index value then update it.
+                
+                dp[len] = a[i];
+                
+                len++; // update the length
+                
+            }else {
+                //find ceil and update value 
 
-            if (A[i] < dp[0])
-                // new smallest value
-                dp[0] = A[i];
-
-            else if (A[i] > dp[len - 1])
-                // A[i] wants to extend largest subsequence
-                dp[len++] = A[i];
-
-            else
-                // A[i] wants to be current end candidate of an existing
-                // subsequence. It will replace ceil value in dp
-                int ceilIdx = CeilIndex(dp, -1, len - 1, A[i]);
-                dp[ceilIdx] = A[i];
+                int ceilIdx = findCeil(dp, 0, len-1, a[i]);
+                
+                dp[ceilIdx] = a[i];
+            }
         }
-
-        return len;
+      
+      return len;
     }
+
+    //pure binary search
     
+    static int findCeil(int[] arr, int l , int r, int key){
+       
+       while(r - l > 1){
+            int m = l + (r - l) / 2;
+            if(arr[m] >= key){
+                r = m;
+            }else{
+
+                l = m;
+            }
+       }
+       return r;
+    }
+}
 ```
 LIS based questions 
 
