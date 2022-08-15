@@ -29,7 +29,11 @@ class Solution
         
     }
 } 
+
+
 ```
+
+    <img width="708" alt="Screenshot 2022-08-15 at 11 01 20 AM" src="https://user-images.githubusercontent.com/13814143/184582497-e1c81737-da13-4c87-a010-6633f766e49d.png">
 
 #### There is another efficient approach is avaiable in less space time complexity, but we can't print LIS from this method, but we can count it.
 
