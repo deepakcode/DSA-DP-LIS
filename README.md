@@ -119,7 +119,7 @@ https://www.codingninjas.com/codestudio/problems/divisible-set_3754960
     (arr[idx] % arr[preIdx) ==0
 
 #### Longest String chain (LIS)
-
+https://www.codingninjas.com/codestudio/problems/longest-string-chain_3752111
 ```java
 
 
@@ -166,6 +166,7 @@ int longestStringChain(String[] arr){
 
 
 #### Longest Bitonic Subsequence
+https://www.codingninjas.com/codestudio/problems/longest-bitonic-sequence_1062688?topList=siddharth-singh-coding-sheet-problems
 
 dp1[]   = 1 , 2 , 2 , 3 , 3 , 4 , 2 , 1
 
@@ -194,6 +195,7 @@ for(int i=0; i<n; i++){
 return maxi;
 ```
 #### Count number of LIS
+https://www.codingninjas.com/codestudio/problems/number-of-longest-increasing-subsequence_3751627
 
 https://www.youtube.com/watch?v=cKVl1TFdNXg&list=PLgUwDviBIf0qUlt5H_kiKYaNSqJ81PMMY&index=48
 
